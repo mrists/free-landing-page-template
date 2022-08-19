@@ -16,5 +16,8 @@
     "postcss": "^8.4.5",
     "sass": "^1.47.0",
     "sort-css-media-queries": "^2.0.4"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
   }
 }

@@ -1,11 +1,10 @@
-body {
-    background-color: red;
-}
-
-h1 {
-    font-size: 2rem;
-}
-h2 {
-    color: yellow;
-    font-size: 1em;
-}
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "skins";
+@import "variables";
+@import "common";
+@import "header";
+@import "sections/about";
+@import "sections/portfolio";
+@import "sections/skills";
+@import "footer";
+@import "fonts";
