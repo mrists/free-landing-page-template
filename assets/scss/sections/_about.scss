@@ -1,0 +1,16 @@
+.about {
+  background-color: $color-light-gray;
+  margin-top: 104px;
+  padding-top: 82px;
+  padding-bottom: 110px;
+  &__title {
+    margin-bottom: 20px;
+    line-height: 42px;
+    letter-spacing: -1.5px;
+  }
+  &__description {
+    line-height: 22px;
+    text-align: center;
+    white-space: pre-line;
+  }
+}

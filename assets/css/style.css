@@ -435,8 +435,18 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Gilroy-Bold";
+}
+
 .container {
-  max-width: 945px;
+  max-width: 982px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -444,6 +454,7 @@ a {
 .header {
   height: 100vh;
   padding-top: 32px;
+  margin-bottom: 150px;
 }
 .header-navbar {
   position: relative;
@@ -511,7 +522,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 .header-meet__name {
   margin: 0;
@@ -536,6 +547,49 @@ a {
   letter-spacing: -1px;
 }
 .header-meet__img {
+  width: 100%;
+}
+
+.about {
+  background-color: #F6F6F6;
+  margin-top: 104px;
+  padding-top: 82px;
+  padding-bottom: 110px;
+}
+.about__title {
+  margin-bottom: 20px;
+  line-height: 42px;
+  letter-spacing: -1.5px;
+}
+.about__description {
+  line-height: 22px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.skills {
+  padding-top: 55px;
+  padding-bottom: 110px;
+}
+.skills__title {
+  margin-bottom: 60px;
+}
+.skills__info {
+  margin-bottom: 85px;
+  text-align: center;
+}
+.skills-programs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills-programs__img {
   width: 100%;
 }
 

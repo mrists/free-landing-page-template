@@ -14,8 +14,18 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: $font-title;
+  font-family: $font-bold;
+}
+
 .container {
-  max-width: 945px;
+  max-width: 982px;
   margin: 0 auto;
   padding: 0 20px;
 }
