@@ -433,6 +433,8 @@ html {
 
 a {
   text-decoration: none;
+  text-align: center;
+  color: #070707;
 }
 
 p {
@@ -445,6 +447,10 @@ h2 {
   font-family: "Gilroy-Bold";
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 982px;
   margin: 0 auto;
@@ -452,9 +458,7 @@ h2 {
 }
 
 .header {
-  height: 100vh;
   padding-top: 32px;
-  margin-bottom: 150px;
 }
 .header-navbar {
   position: relative;
@@ -510,7 +514,7 @@ h2 {
 }
 .header-meet {
   margin-top: 65px;
-  padding-bottom: 104px;
+  padding-bottom: 100px;
 }
 .header-meet__content {
   display: -webkit-box;
@@ -546,18 +550,14 @@ h2 {
   margin-bottom: 35px;
   letter-spacing: -1px;
 }
-.header-meet__img {
-  width: 100%;
-}
 
 .about {
   background-color: #F6F6F6;
-  margin-top: 104px;
   padding-top: 82px;
   padding-bottom: 110px;
 }
 .about__title {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   line-height: 42px;
   letter-spacing: -1.5px;
 }
@@ -567,11 +567,59 @@ h2 {
   white-space: pre-line;
 }
 
+.portfolio {
+  background-color: #F6F6F6;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+.portfolio__title {
+  margin-bottom: 50px;
+}
+.portfolio__project:not(:last-child) {
+  margin-bottom: 95px;
+}
+.portfolio__project-img {
+  margin-bottom: 40px;
+}
+.portfolio__project-link {
+  position: relative;
+  display: block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 5px;
+  -webkit-transition: 0.5s border-bottom;
+  -o-transition: 0.5s border-bottom;
+  transition: 0.5s border-bottom;
+}
+.portfolio__project-link::after {
+  position: absolute;
+  bottom: 3px;
+  width: 0;
+  content: "";
+  border-bottom: 1px solid #070707;
+  -webkit-transition: width 0.3s ease-out;
+  -o-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.portfolio__project-link:hover::after {
+  width: 100%;
+}
+
 .skills {
   padding-top: 55px;
   padding-bottom: 110px;
 }
 .skills__title {
+  letter-spacing: -0.3px;
   margin-bottom: 60px;
 }
 .skills__info {
@@ -589,8 +637,77 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
-.skills-programs__img {
-  width: 100%;
+
+.footer {
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+.footer__title {
+  margin-bottom: 30px;
+}
+.footer__question {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.footer__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 85px;
+}
+.footer__action-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 180px;
+  height: 42px;
+  border-radius: 21px;
+  background-color: #070707;
+  color: #ffffff;
+  -webkit-transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  -o-transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+}
+.footer__action-btn:hover {
+  -webkit-transform: scale(1.1) translateY(-5px);
+      -ms-transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px);
+  -webkit-box-shadow: 0 5px 5px rgba(7, 7, 7, 0.4);
+          box-shadow: 0 5px 5px rgba(7, 7, 7, 0.4);
+}
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  margin-bottom: 45px;
+}
+.footer__socials-img {
+  width: 40px;
+}
+.footer__copyright {
+  text-align: center;
+  color: #828282;
 }
 
 @font-face {

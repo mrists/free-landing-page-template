@@ -1,0 +1,46 @@
+.footer {
+  padding-top: 85px;
+  padding-bottom: 60px;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__question {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  &__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+    &-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 180px;
+      height: 42px;
+      border-radius: 21px;
+      background-color: $color-black;
+      color: $color-white;
+      transition: transform .5s, box-shadow .5s;
+      &:hover {
+        transform: scale(1.1) translateY(-5px);
+        box-shadow: 0 5px 5px rgba($color-black, 0.4);
+      }
+    }
+  }
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 45px;
+    &-img {
+      width: 40px;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    color: $color-gray;
+  }
+}

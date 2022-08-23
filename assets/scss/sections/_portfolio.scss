@@ -1,0 +1,40 @@
+.portfolio {
+  background-color: $color-light-gray;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__project {
+    &:not(:last-child) {
+      margin-bottom: 95px;
+    }
+    &-img {
+      margin-bottom: 40px;
+    }
+    &-link {
+      position: relative;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: max-content;
+      padding: 5px;
+      transition: .5s border-bottom ;
+      &::after {
+        position: absolute;
+        bottom: 3px;
+        width: 0;
+        content: "";
+        border-bottom: 1px solid $color-black;
+        transition: width .3s ease-out;
+        left: 50%;
+        transform: translateX(-50%)
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      } 
+    }
+  }
+}

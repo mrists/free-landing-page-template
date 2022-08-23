@@ -2,6 +2,7 @@
   padding-top: 55px;
   padding-bottom: 110px;
   &__title {
+    letter-spacing: -0.3px;
     margin-bottom: 60px;
   }
   &__info {
@@ -12,8 +13,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__img {
-      width: 100%;
-    }
   }
 }
