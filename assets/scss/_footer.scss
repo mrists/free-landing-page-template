@@ -1,28 +1,54 @@
 .footer {
-  padding-top: 85px;
-  padding-bottom: 60px;
+  @include min {
+    padding-top: 85px;
+    padding-bottom: 60px;
+  }
+  @include max {
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
   &__title {
-    margin-bottom: 30px;
+    @include min {
+      margin-bottom: 30px;
+    }
+    @include max {
+      margin-bottom: 40px;
+    }
   }
   &__question {
-    margin-bottom: 35px;
     text-align: center;
+    @include min {
+      margin-bottom: 35px;
+    }
+    @include max {
+      margin-bottom: 45px;
+    }
   }
   &__action {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 85px;
+    @include min {
+      margin-bottom: 85px;
+    }
+    @include max {
+      margin-bottom: 45px;
+    }
     &-btn {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-width: 180px;
       height: 42px;
       border-radius: 21px;
       background-color: $color-black;
       color: $color-white;
       transition: transform .5s, box-shadow .5s;
+      @include min {
+        min-width: 180px;
+      }
+      @include max {
+        width: 100%;
+      }
       &:hover {
         transform: scale(1.1) translateY(-5px);
         box-shadow: 0 5px 5px rgba($color-black, 0.4);
@@ -33,10 +59,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
     margin-bottom: 45px;
+    @include min {
+      gap: 60px;
+    }
+    @include max {
+      gap: 50px;
+    }
     &-img {
-      width: 40px;
+      @media (min-width:380.2px) {
+        width: 40px;
+      }
+      @media (max-width:380px) {
+        width: 35px;
+      }
+      // @include max {
+      //   width: 30px;
+      // }
     }
   }
   &__copyright {

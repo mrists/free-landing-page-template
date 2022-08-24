@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/vectors/shortcut-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Denis Novik</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
       <nav class="header-navbar">
+        <div class="header-navbar__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul  class="header-navbar__list">
           <li class="header-navbar__item"><a class="header-navbar__link" href="#home">Home</a></li>
           <li class="header-navbar__item"><a class="header-navbar__link" href="#about">About me</a></li>
@@ -25,64 +31,67 @@
           <p class="header-meet__info">UX | UI designer <br> 24 years old, Minsk</p>
           <span class="header-meet__language">RU | ENG</span>
         </div>
-        <div><img src="assets/img/header-image.png" alt="Denis Novik"></div>
+        <div class="header__img"><img src="assets/img/header-image.png" alt="Denis Novik"></div>
+        <div class="header__img--fullsize"><img src="assets/img/header-image-fullsize.png" alt="Denis Novik"></div>
       </div>
     </div>
   </header>
 
-  <section class="about" id="about">
-    <div class="container">
-      <h2 class="about__title">About me</h2>
-      <div>
-        <p class="about__description">Hi, I'm Denis – UX/UI designer from Minsk.
-          I'm interested in design and everything connected with it.
-           
-
-          I'm studying at courses "Web and mobile design
-          interfaces" in IT-Academy.
-          
-
-          Ready to implement excellent projects
-          with wonderful people.</p>
+  <main>
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="about__title">About me</h2>
+        <div>
+          <p class="about__description">Hi, I'm Denis – UX/UI designer from Minsk.
+            I'm interested in design and everything connected with it.
+             
+  
+            I'm studying at courses "Web and mobile design
+            interfaces" in IT-Academy.
+            
+  
+            Ready to implement excellent projects
+            with wonderful people.</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="skills">
-    <div class="container">
-      <h2 class="skills__title">Skills</h2>
-      <p class="skills__info">I work in such programs as</p>
-      <div class="skills-programs">
-        <div><img src="assets/img/vectors/photoshop.png" alt="photoshop"></div>
-        <div><img src="assets/img/vectors/illustrator.png" alt="illustrator"></div>
-        <div><img src="assets/img/vectors/after-effects.png"alt="after-effects"></div>
-        <div><img src="assets/img/vectors/figma.png" alt="figma"></div>
+    </section>
+  
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="skills__title">Skills</h2>
+        <p class="skills__info">I work in such programs as</p>
+        <div class="skills-programs">
+          <div><img src="assets/img/vectors/photoshop.png" alt="photoshop"></div>
+          <div><img src="assets/img/vectors/illustrator.png" alt="illustrator"></div>
+          <div><img src="assets/img/vectors/after-effects.png"alt="after-effects"></div>
+          <div><img src="assets/img/vectors/figma.png" alt="figma"></div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="portfolio">
-    <div class="container">
-      <h2 class="portfolio__title">Portfolio</h2>
-
-      <div class="portfolio__project">
-        <img class="portfolio__project-img" src="assets/img/fashion-store.png" alt="fashion-store">
-        <a class="portfolio__project-link" href="#">Online fashion store - Homepage</a>
+    </section>
+  
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="portfolio__title">Portfolio</h2>
+  
+        <div class="portfolio__project">
+          <img class="portfolio__project-img" src="assets/img/fashion-store.png" alt="fashion-store">
+          <a class="portfolio__project-link" href="#">Online fashion store - Homepage</a>
+        </div>
+        
+        <div class="portfolio__project">
+          <img class="portfolio__project-img" src="assets/img/reebok.png" alt="reebok.">
+          <a class="portfolio__project-link" href="#">Reebok Store - Concept</a>
+        </div>
+  
+        <div class="portfolio__project">
+          <img class="portfolio__project-img" src="assets/img/braun.png" alt="braun">
+          <a class="portfolio__project-link" href="#">Braun Landing Page - Concept</a>
+        </div>
       </div>
-      
-      <div class="portfolio__project">
-        <img class="portfolio__project-img" src="assets/img/reebok.png" alt="reebok.">
-        <a class="portfolio__project-link" href="#">Reebok Store - Concept</a>
-      </div>
+    </section>
+  </main>
 
-      <div class="portfolio__project">
-        <img class="portfolio__project-img" src="assets/img/braun.png" alt="braun">
-        <a class="portfolio__project-link" href="#">Braun Landing Page - Concept</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="container">
       <h2 class="footer__title">Contacts</h2>
       <p class="footer__question">Want to know more or just chat?<br> You are welcome!</p>
@@ -100,5 +109,7 @@
       <div class="footer__copyright">&copy Vladislav Kalashnik</div>
     </div>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

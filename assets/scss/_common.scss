@@ -10,6 +10,12 @@ html {
   font-family: $font-medium;
 }
 
+body {
+  &.active {
+   overflow-y: hidden; 
+  }
+}
+
 a {
   text-decoration: none;
   text-align: center;
@@ -31,7 +37,7 @@ img {
 }
 
 .container {
-  max-width: 982px;
+  max-width: 1002px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
 }

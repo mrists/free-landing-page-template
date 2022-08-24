@@ -1,0 +1,156 @@
+.header-navbar {
+  position: relative;
+  &::after {
+    @include min {
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 57px;
+      border-bottom: 1px solid $color-gray;
+    }
+    @include max {
+      display: none;
+    }
+  }
+  &__hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    width: 33px;
+    height: 20px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform: rotate(0deg);
+
+    @include min {
+      display: none;
+    }
+    span {
+      position: absolute;
+      left: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 4px;
+
+      transition: 0.5s ease-in-out;
+      transform: rotate(0deg);
+
+      opacity: 1;
+      background-color: $color-black;
+      &:nth-of-type(1) {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        top: 8px;
+      }
+      &:nth-of-type(3) {
+        top: 16px;
+      }
+    }
+    &.active {
+      z-index: 5;
+      span {
+        background-color: $color-gray;
+        &:nth-of-type(1) {
+          top: 12px;
+
+          transform: rotate(135deg);
+        }
+        &:nth-of-type(2) {
+          left: -40px;
+
+          opacity: 0;
+        }
+        &:nth-of-type(3) {
+          top: 12px;
+
+          transform: rotate(-135deg);
+        }
+      }
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    transition: transform .5s;
+    &.active {
+      transform: translateX(0%);
+    }
+    @include min {
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include max {
+      position: absolute;
+      gap: 65px;
+      min-height: 100vh;
+      width: 101%;
+      flex-direction: column;
+      background-color: $color-white;
+      z-index: 3;
+      font-size: $font-title;
+      transform: translateX(111%);
+    }
+  }
+  &__item {
+    &:nth-of-type(1) {
+      .header-navbar__link {
+        color: $color-black;
+        &::after {
+          position: absolute;
+          width: 0;
+          content: '';
+          transition: width 0.5s;
+          left: 50%;
+          transform: translateX(-50%);
+          @include min {
+            border-bottom: 2.5px solid $color-black;
+            bottom: -5px;
+          }
+          @include max {
+            border-radius: 3px;
+            border-bottom: 6px solid $color-black;
+            bottom: -8px;
+          }
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__link {
+    position: relative;
+    color: $color-gray;
+    font-family: $font-bold;
+    &::after {
+      position: absolute;
+      width: 0;
+      content: '';
+      transition: width 0.5s;
+      left: 50%;
+      transform: translateX(-50%);
+      @include min {
+        border-bottom: 2.5px solid $color-gray;
+        bottom: -5px;
+      }
+      @include max {
+        border-radius: 3px;
+        border-bottom: 6px solid $color-gray;
+        bottom: -8px;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

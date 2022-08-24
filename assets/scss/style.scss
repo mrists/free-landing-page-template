@@ -1,10 +1,17 @@
 @import "../../node_modules/normalize-scss/sass/normalize/import-now";
+
 @import "skins";
 @import "variables";
+@import "media-mixins";
+
 @import "common";
-@import "header";
+
+@import "header/header";
+@import "header/header-navbar";
+
 @import "sections/about";
 @import "sections/portfolio";
 @import "sections/skills";
+
 @import "footer";
 @import "fonts";

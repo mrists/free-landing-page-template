@@ -1,16 +1,32 @@
 .portfolio {
   background-color: $color-light-gray;
-  padding-top: 80px;
-  padding-bottom: 90px;
+  @include min {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  @include max {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
   &__title {
     margin-bottom: 50px;
   }
   &__project {
     &:not(:last-child) {
-      margin-bottom: 95px;
+      @include min {
+        margin-bottom: 95px;
+      }
+      @include max {
+        margin-bottom: 75px;
+      }
     }
     &-img {
-      margin-bottom: 40px;
+      @include min {
+        margin-bottom: 40px;
+      }
+      @include max {
+        margin-bottom: 30px;
+      }
     }
     &-link {
       position: relative;
