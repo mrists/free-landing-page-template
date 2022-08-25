@@ -1,8 +1,9 @@
 .about {
   background-color: $color-light-gray;
+
   @include min {
-    padding-bottom: 110px;
     padding-top: 80px;
+    padding-bottom: 110px;
   }
   @include max {
     padding-top: 50px;
@@ -10,12 +11,15 @@
   }
   &__title {
     margin-bottom: 23px;
-    line-height: 42px;
+
     letter-spacing: -1.5px;
+
+    line-height: 42px;
   }
   &__description {
-    line-height: 22px;
     text-align: center;
     white-space: pre-line;
+
+    line-height: 22px;
   }
 }

@@ -17,6 +17,7 @@
   }
   &__question {
     text-align: center;
+
     @include min {
       margin-bottom: 35px;
     }
@@ -26,8 +27,9 @@
   }
   &__action {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
     @include min {
       margin-bottom: 85px;
     }
@@ -36,13 +38,17 @@
     }
     &-btn {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+
       height: 42px;
+
+      transition: transform 0.5s, box-shadow 0.5s;
+
+      color: $color-white;
       border-radius: 21px;
       background-color: $color-black;
-      color: $color-white;
-      transition: transform .5s, box-shadow .5s;
+
       @include min {
         min-width: 180px;
       }
@@ -51,15 +57,18 @@
       }
       &:hover {
         transform: scale(1.1) translateY(-5px);
+
         box-shadow: 0 5px 5px rgba($color-black, 0.4);
       }
     }
   }
   &__socials {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
     margin-bottom: 45px;
+
     @include min {
       gap: 60px;
     }
@@ -80,6 +89,7 @@
   }
   &__copyright {
     text-align: center;
+
     color: $color-gray;
   }
 }

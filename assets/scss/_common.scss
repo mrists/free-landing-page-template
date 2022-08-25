@@ -5,20 +5,22 @@
 }
 
 html {
-  font-size: $font-size;
   color: $color-black;
+
   font-family: $font-medium;
+  font-size: $font-size;
 }
 
 body {
   &.active {
-   overflow-y: hidden; 
+    overflow-y: hidden;
   }
 }
 
 a {
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
+
   color: $color-black;
 }
 
@@ -28,8 +30,9 @@ p {
 
 h2 {
   text-align: center;
-  font-size: $font-title;
+
   font-family: $font-bold;
+  font-size: $font-title;
 }
 
 img {

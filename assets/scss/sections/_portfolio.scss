@@ -1,5 +1,6 @@
 .portfolio {
   background-color: $color-light-gray;
+
   @include min {
     padding-top: 80px;
     padding-bottom: 90px;
@@ -30,27 +31,33 @@
     }
     &-link {
       position: relative;
-      display: block;
       left: 50%;
-      transform: translateX(-50%);
+
+      display: block;
+
       max-width: max-content;
       padding: 5px;
-      transition: .5s border-bottom ;
+
+      transition: 0.5s border-bottom ;
+      transform: translateX(-50%);
       &::after {
         position: absolute;
         bottom: 3px;
-        width: 0;
-        content: "";
-        border-bottom: 1px solid $color-black;
-        transition: width .3s ease-out;
         left: 50%;
-        transform: translateX(-50%)
+
+        width: 0;
+
+        content: "";
+        transition: width 0.3s ease-out;
+        transform: translateX(-50%);
+
+        border-bottom: 1px solid $color-black;
       }
       &:hover {
         &::after {
           width: 100%;
         }
-      } 
+      }
     }
   }
 }
